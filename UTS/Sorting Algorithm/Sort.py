@@ -8,6 +8,10 @@ class Sort:
 
   @staticmethod
   def Start():
+    print('-'*25, 'Program Sorting', '-'*25)
+    print('\nNama\t: Erlan Kurnia\nNIM\t: 04316038\nProdi\t: Teknik Informatika\n')
+    print('*Jika terdapat banyak angka, pisahkan dengan karakter koma \',\'')
+    print('*Silahkan dikosongi, jika datanya menggunakan angka acak\n')
     Sort.InputData()
 
   # Memilih algoritma yang akan digunakan
@@ -34,7 +38,7 @@ class Sort:
   @staticmethod
   def InputData():
     while True:
-      data = input('Masukkan angka  : ')
+      data = input('Masukkan data  : ')
       if (data is None) or (data is ''):
         dataLength = input('  Masukkan banyak data  : ')
         data = Sort.RandomData(dataLength); break
@@ -65,7 +69,7 @@ class Sort:
       elif confirm == 'y' or confirm is 'Y':
         Sort.ChooseAlgorithm(Sort.__previousList.copy()); break
   
-  # Memberikan angka acak
+  # Memberikan nilai acak pada data array yang jumlahnya juga acak
   @staticmethod
   def RandomData(dataLength):
     if not dataLength.isnumeric():
