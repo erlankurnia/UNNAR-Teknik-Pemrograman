@@ -6,6 +6,10 @@ class Sort:
       ,'v','w','x','y','z','"','<','>','\'','.',';',':','?','/','+','=','|','\\','_','-','[',']','{'
       ,'}','(',')','`','~','!','@','#','$','%','^','&','*']
 
+  @staticmethod
+  def Start():
+    Sort.InputData()
+
   # Memilih algoritma yang akan digunakan
   @staticmethod
   def ChooseAlgorithm(data):
