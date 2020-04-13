@@ -47,7 +47,6 @@ class Sort:
         for ch in Sort.__except:
           data = str.replace(data, ch, ',')
         data = str.split(data, ',')
-        print(data.count(''))
         while data.count('') > 0:
           data.remove('')
         i = 0
@@ -55,7 +54,6 @@ class Sort:
           data[i] = int(data[i])
           i+=1
         break
-      print(data)
     Sort.__previousList = data.copy()
     Sort.ChooseAlgorithm(Sort.__previousList.copy())
   
@@ -77,7 +75,7 @@ class Sort:
     else:
       if int(dataLength) < 1:
         dataLength = randrange(2, 10)
-    return [randrange(0,100) for i in range(0, int(dataLength))]
+    return [randrange(0,int(dataLength)) for i in range(0, int(dataLength))]
   
   # Menggunakan Algoritma Selection
   @staticmethod
