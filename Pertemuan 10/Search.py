@@ -1,5 +1,5 @@
 from random import randrange
-import time
+from time import sleep
 class Search:
   __data = []
   __except = ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u'
@@ -127,4 +127,4 @@ class Search:
       if index == rudand:
         found = True
         print("  Angka",key,"Tidak ditemukan.")
-      time.sleep(1)
+      sleep(1)
